@@ -1,0 +1,506 @@
+[
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$870000$tienda$admin_hash_placeholder",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "Administrador",
+      "last_name": "UrbanGear",
+      "email": "admin@urbangear.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z",
+      "phone": "+54 11 4000-0001",
+      "address": "Av. Cabildo 1234, Buenos Aires",
+      "avatar": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$870000$tienda$cliente_hash_placeholder",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "lucas_runner",
+      "first_name": "Lucas",
+      "last_name": "Fernández",
+      "email": "lucas@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-02-10T10:00:00Z",
+      "phone": "+54 11 5555-1234",
+      "address": "Calle Corrientes 987, CABA",
+      "avatar": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$870000$tienda$cliente2_hash_placeholder",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "sofia_fit",
+      "first_name": "Sofía",
+      "last_name": "Martínez",
+      "email": "sofia@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-03-05T09:30:00Z",
+      "phone": "+54 11 6666-5678",
+      "address": "Av. Santa Fe 2200, Palermo, CABA",
+      "avatar": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+      "name": "Calzado Deportivo",
+      "slug": "calzado-deportivo",
+      "image": null
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+      "name": "Indumentaria",
+      "slug": "indumentaria",
+      "image": null
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+      "name": "Accesorios de Entrenamiento",
+      "slug": "accesorios-entrenamiento",
+      "image": null
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
+      "name": "Equipamiento Fitness",
+      "slug": "equipamiento-fitness",
+      "image": null
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 5,
+    "fields": {
+      "name": "Nutrición Deportiva",
+      "slug": "nutricion-deportiva",
+      "image": null
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "name": "Zapatillas Trail Runner Pro X",
+      "slug": "zapatillas-trail-runner-pro-x",
+      "description": "Zapatillas de trail running con suela de agarre extremo. Ideales para senderos de montaña y superficies irregulares. Capellada en malla transpirable con refuerzos en zonas de impacto. Sistema de amortiguación reactiva para mayor comodidad en largas distancias.",
+      "price": "24500.00",
+      "stock": 40,
+      "image": null,
+      "available": true,
+      "created": "2024-01-10T09:00:00Z",
+      "updated": "2024-01-10T09:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+      "category": 1,
+      "name": "Zapatillas Running Speed Lite",
+      "slug": "zapatillas-running-speed-lite",
+      "description": "Zapatillas ultralivianas para running en asfalto. Peso pluma de solo 195g. Plantilla ergonómica moldeada y sistema de retorno de energía en la mediasuela. Perfectas para competencias y entrenamientos de velocidad.",
+      "price": "19800.00",
+      "stock": 55,
+      "image": null,
+      "available": true,
+      "created": "2024-01-12T10:00:00Z",
+      "updated": "2024-01-12T10:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+      "category": 1,
+      "name": "Botines Fútbol 11 Grip Control",
+      "slug": "botines-futbol-11-grip-control",
+      "description": "Botines de fútbol 11 con tapones intercambiables. Capellada en cuero sintético de alta resistencia para mayor control del balón. Diseño anatómico del talón que previene lesiones. Compatible con tapones moldeados y en rosca.",
+      "price": "28900.00",
+      "stock": 30,
+      "image": null,
+      "available": true,
+      "created": "2024-01-15T11:00:00Z",
+      "updated": "2024-01-15T11:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+      "category": 2,
+      "name": "Campera Rompeviento Aero Shield",
+      "slug": "campera-rompeviento-aero-shield",
+      "description": "Campera rompeviento para running y ciclismo outdoor. Tejido técnico repelente al agua con costura sellada. Corte aerodinámico que reduce la resistencia al viento. Bolsillo trasero para guardar la prenda enrollada. Reflectivos para mayor visibilidad nocturna.",
+      "price": "18500.00",
+      "stock": 25,
+      "image": null,
+      "available": true,
+      "created": "2024-01-20T08:00:00Z",
+      "updated": "2024-01-20T08:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+      "category": 2,
+      "name": "Short Compresión PowerFlex",
+      "slug": "short-compresion-powerflex",
+      "description": "Short de compresión para entrenamiento de alta intensidad. Tejido Dry-Fit que absorbe la humedad y la aleja del cuerpo. Banda elástica reforzada con corte ergonómico para máxima libertad de movimiento. Bolsillo lateral con cierre para elementos pequeños.",
+      "price": "7200.00",
+      "stock": 80,
+      "image": null,
+      "available": true,
+      "created": "2024-01-22T09:30:00Z",
+      "updated": "2024-01-22T09:30:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+      "category": 2,
+      "name": "Remera Técnica Dry Sport",
+      "slug": "remera-tecnica-dry-sport",
+      "description": "Remera técnica de manga corta con tecnología de secado rápido. Tejido 100% poliéster microperforado para máxima ventilación. Costuras planas que evitan rozaduras durante el ejercicio. Disponible en múltiples colores vibrantes.",
+      "price": "5800.00",
+      "stock": 120,
+      "image": null,
+      "available": true,
+      "created": "2024-01-25T10:00:00Z",
+      "updated": "2024-01-25T10:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+      "category": 3,
+      "name": "Mochila Hidratación Trail 10L",
+      "slug": "mochila-hidratacion-trail-10l",
+      "description": "Mochila de hidratación para trail running y ciclismo de montaña. Capacidad de 10 litros con compartimento para bolsa de agua de 2L (no incluida). Múltiples bolsillos organizadores. Tirantes ajustables y espalda ventilada tipo mesh. Cobertor impermeable incluido.",
+      "price": "14200.00",
+      "stock": 20,
+      "image": null,
+      "available": true,
+      "created": "2024-02-01T09:00:00Z",
+      "updated": "2024-02-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+      "category": 3,
+      "name": "Cinta de Medición Profesional",
+      "slug": "cinta-medicion-profesional",
+      "description": "Cinta métrica retráctil para entrenadores y atletas. Mide hasta 150cm con marcas cada 5mm. Diseño ergonómico de metal y plástico ABS resistente. Ideal para control de medidas corporales en seguimiento de progreso físico.",
+      "price": "1800.00",
+      "stock": 200,
+      "image": null,
+      "available": true,
+      "created": "2024-02-05T11:00:00Z",
+      "updated": "2024-02-05T11:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+      "category": 4,
+      "name": "Set Mancuernas Ajustables 2-20kg",
+      "slug": "set-mancuernas-ajustables-2-20kg",
+      "description": "Par de mancuernas ajustables de 2 a 20kg por unidad. Sistema de rosca rápida con discos de goma antideslizantes. Mango ergonómico con grip antideslizante. Incluye soporte base de almacenamiento. Ideales para entrenamiento en casa o gimnasio.",
+      "price": "42000.00",
+      "stock": 15,
+      "image": null,
+      "available": true,
+      "created": "2024-02-10T08:00:00Z",
+      "updated": "2024-02-10T08:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+      "category": 4,
+      "name": "Colchoneta Yoga & Pilates Premium 6mm",
+      "slug": "colchoneta-yoga-pilates-premium-6mm",
+      "description": "Colchoneta profesional de 6mm de espesor en material TPE ecológico. Superficie antideslizante en ambas caras. Alineadores visuales impresos para correcta postura. Incluye correa de transporte. Sin PVC ni ftalatos. Dimensiones: 183 x 61 cm.",
+      "price": "8900.00",
+      "stock": 45,
+      "image": null,
+      "available": true,
+      "created": "2024-02-12T10:30:00Z",
+      "updated": "2024-02-12T10:30:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+      "category": 5,
+      "name": "Proteína Whey Isolate Vainilla 1kg",
+      "slug": "proteina-whey-isolate-vainilla-1kg",
+      "description": "Proteína de suero isolada de alta pureza (90% proteína por porción). Sabor vainilla cremosa sin edulcorantes artificiales. Bajo en grasa y carbohidratos. Ideal para recuperación muscular post-entrenamiento. Formato de 1kg (aprox. 33 porciones). Certificado libre de doping.",
+      "price": "16500.00",
+      "stock": 60,
+      "image": null,
+      "available": true,
+      "created": "2024-02-15T09:00:00Z",
+      "updated": "2024-02-15T09:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+      "category": 5,
+      "name": "Creatina Monohidratada Pura 300g",
+      "slug": "creatina-monohidratada-pura-300g",
+      "description": "Creatina monohidratada micronizada de grado farmacéutico. Sin saborizantes ni colorantes. Mejora la fuerza y el rendimiento en ejercicios de alta intensidad. 60 porciones de 5g por envase. Solubilidad instantánea en agua o jugos. Apta para veganos.",
+      "price": "9200.00",
+      "stock": 75,
+      "image": null,
+      "available": true,
+      "created": "2024-02-18T10:00:00Z",
+      "updated": "2024-02-18T10:00:00Z"
+    }
+  },
+  {
+    "model": "products.productvariant",
+    "pk": 1,
+    "fields": {
+      "product": 1,
+      "size": "S",
+      "color": "Negro/Verde",
+      "stock": 8,
+      "extra_price": "0.00"
+    }
+  },
+  {
+    "model": "products.productvariant",
+    "pk": 2,
+    "fields": {
+      "product": 1,
+      "size": "M",
+      "color": "Negro/Verde",
+      "stock": 12,
+      "extra_price": "0.00"
+    }
+  },
+  {
+    "model": "products.productvariant",
+    "pk": 3,
+    "fields": {
+      "product": 1,
+      "size": "L",
+      "color": "Azul/Naranja",
+      "stock": 10,
+      "extra_price": "500.00"
+    }
+  },
+  {
+    "model": "products.productvariant",
+    "pk": 4,
+    "fields": {
+      "product": 1,
+      "size": "XL",
+      "color": "Azul/Naranja",
+      "stock": 10,
+      "extra_price": "500.00"
+    }
+  },
+  {
+    "model": "products.productvariant",
+    "pk": 5,
+    "fields": {
+      "product": 2,
+      "size": "S",
+      "color": "Blanco",
+      "stock": 15,
+      "extra_price": "0.00"
+    }
+  },
+  {
+    "model": "products.productvariant",
+    "pk": 6,
+    "fields": {
+      "product": 2,
+      "size": "M",
+      "color": "Blanco",
+      "stock": 20,
+      "extra_price": "0.00"
+    }
+  },
+  {
+    "model": "products.productvariant",
+    "pk": 7,
+    "fields": {
+      "product": 4,
+      "size": "S",
+      "color": "Negro",
+      "stock": 5,
+      "extra_price": "0.00"
+    }
+  },
+  {
+    "model": "products.productvariant",
+    "pk": 8,
+    "fields": {
+      "product": 4,
+      "size": "M",
+      "color": "Negro",
+      "stock": 8,
+      "extra_price": "0.00"
+    }
+  },
+  {
+    "model": "products.productvariant",
+    "pk": 9,
+    "fields": {
+      "product": 4,
+      "size": "L",
+      "color": "Rojo",
+      "stock": 7,
+      "extra_price": "1000.00"
+    }
+  },
+  {
+    "model": "products.productvariant",
+    "pk": 10,
+    "fields": {
+      "product": 5,
+      "size": "S",
+      "color": "Negro",
+      "stock": 20,
+      "extra_price": "0.00"
+    }
+  },
+  {
+    "model": "products.productvariant",
+    "pk": 11,
+    "fields": {
+      "product": 5,
+      "size": "M",
+      "color": "Negro",
+      "stock": 25,
+      "extra_price": "0.00"
+    }
+  },
+  {
+    "model": "products.productvariant",
+    "pk": 12,
+    "fields": {
+      "product": 5,
+      "size": "L",
+      "color": "Azul Marino",
+      "stock": 20,
+      "extra_price": "0.00"
+    }
+  },
+  {
+    "model": "products.productvariant",
+    "pk": 13,
+    "fields": {
+      "product": 6,
+      "size": "S",
+      "color": "Verde Fluorescente",
+      "stock": 30,
+      "extra_price": "0.00"
+    }
+  },
+  {
+    "model": "products.productvariant",
+    "pk": 14,
+    "fields": {
+      "product": 6,
+      "size": "M",
+      "color": "Verde Fluorescente",
+      "stock": 40,
+      "extra_price": "0.00"
+    }
+  },
+  {
+    "model": "products.productvariant",
+    "pk": 15,
+    "fields": {
+      "product": 6,
+      "size": "L",
+      "color": "Naranja",
+      "stock": 30,
+      "extra_price": "0.00"
+    }
+  },
+  {
+    "model": "coupons.coupon",
+    "pk": 1,
+    "fields": {
+      "code": "BIENVENIDO15",
+      "discount": "15.00",
+      "active": true,
+      "valid_from": "2024-01-01T00:00:00Z",
+      "valid_to": "2026-12-31T23:59:59Z",
+      "max_uses": 500,
+      "used_count": 0
+    }
+  },
+  {
+    "model": "coupons.coupon",
+    "pk": 2,
+    "fields": {
+      "code": "SUMMER2024",
+      "discount": "20.00",
+      "active": true,
+      "valid_from": "2024-06-01T00:00:00Z",
+      "valid_to": "2026-08-31T23:59:59Z",
+      "max_uses": 200,
+      "used_count": 0
+    }
+  },
+  {
+    "model": "coupons.coupon",
+    "pk": 3,
+    "fields": {
+      "code": "FITPRO10",
+      "discount": "10.00",
+      "active": true,
+      "valid_from": "2024-01-01T00:00:00Z",
+      "valid_to": "2026-12-31T23:59:59Z",
+      "max_uses": 1000,
+      "used_count": 0
+    }
+  }
+]

@@ -1,0 +1,9 @@
+"""Configuración de la aplicación de carrito de TIENDA - UrbanGear."""
+from django.apps import AppConfig
+
+
+class CartConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name               = 'apps.cart'
+    label              = 'cart'
+    verbose_name       = 'Carrito UrbanGear'
